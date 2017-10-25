@@ -5,3 +5,6 @@ time make ARCH=mips O=build-tgt qemu-malta_defconfig
 # supported; may need to modify this value depending on what your linker
 # supports
 time make ARCH=mips O=build-tgt CROSS_COMPILE=mips-elf- -j4 32bit-emul=elf32ebmip
+
+# QEMU run
+qemu-system-mips -nodefaults -M malta -m 256 -nographic -serial stdio -monitor null -bios build-tgt/barebox-flash-image
