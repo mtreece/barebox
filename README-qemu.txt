@@ -1,5 +1,5 @@
 # configure the build
-time make ARCH=mips O=build-tgt qemu-malta_defconfig
+time make ARCH=mips O=build-tgt demo_qemu_defconfig
 
 # note, the 32bit-emul= option here is to override a linker option that is not
 # supported; may need to modify this value depending on what your linker
